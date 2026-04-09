@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conscious Bamboo offers sustainable and eco-friendly bamboo products customized for your living space.">
+    <title>Conscious Bamboo - Sustainable Living</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <header id="main-header">
+        <div class="container nav-container">
+            <h1 class="logo">Conscious<span>Bamboo</span></h1>
+            <nav aria-label="Main Navigation">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#customize" class="btn-primary nav-btn">Customize</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <div class="hero-text fade-in">
+                    <h2 class="hero-title">Sustainable Living with Bamboo</h2>
+                    <p class="hero-subtitle">Elevate your lifestyle with our fully customized, premium eco-friendly bamboo creations tailored specifically to your needs.</p>
+                    <div class="hero-actions">
+                        <a href="#customize" class="btn-large">Design Yours Now</a>
+                        <a href="#products" class="btn-secondary">Explore Collection</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="section-title fade-in">
+                    <h2>Our Mission</h2>
+                    <p>Rooted in nature, designed for the future.</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text fade-in">
+                        <h3>Why Bamboo?</h3>
+                        <p>Bamboo is an incredibly renewable resource that grows faster than almost any other plant. At Conscious Bamboo, our vision is to replace unsustainable materials in everyday life with incredibly strong, beautifully crafted bamboo.</p>
+                        <p>We focus on zero-waste production, crafting customized pieces that fit gracefully into modern, mindful living spaces, ensuring every product is as unique as you are.</p>
+                    </div>
+                    <div class="about-stats fade-in slide-up">
+                        <div class="stat-card">
+                            <h4>100%</h4>
+                            <p>Sustainable</p>
+                        </div>
+                        <div class="stat-card">
+                            <h4>Zero</h4>
+                            <p>Waste Concept</p>
+                        </div>
+                        <div class="stat-card">
+                            <h4>Custom</h4>
+                            <p>Designed For You</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products/Services Section -->
+        <section id="products" class="products section bg-light">
+            <div class="container">
+                <div class="section-title fade-in">
+                    <h2>Our Premium Products</h2>
+                    <p>Discover the beauty of bamboo tailored for every aspect of your life.</p>
+                </div>
+                <div class="product-grid fade-in slide-up">
+                    <div class="product-card">
+                        <div class="img-wrapper">
+                            <img src="images/bamboo_furniture.png" alt="Minimalist Bamboo Chair">
+                        </div>
+                        <div class="product-info">
+                            <h3>Bamboo Furniture</h3>
+                            <p>Minimalist bespoke chairs, tables, and organizers designed for comfort and durability.</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="img-wrapper">
+                            <img src="images/bamboo_cutlery.png" alt="Reusable Bamboo Cutlery">
+                        </div>
+                        <div class="product-info">
+                            <h3>Daily Use Items</h3>
+                            <p>Zero-waste cutlery, toothbrushes, and essential kitchenware.</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="img-wrapper">
+                            <img src="images/bamboo_decor.png" alt="Bamboo Desk Lamp and Vase">
+                        </div>
+                        <div class="product-info">
+                            <h3>Home Decor</h3>
+                            <p>Elegant vases, lamps, and natural accent pieces adding warmth to your home.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customization Form Section -->
+        <section id="customize" class="customize section">
+            <div class="container">
+                <div class="section-title fade-in">
+                    <h2>Design Your Bamboo Experience</h2>
+                    <p>Tell us what you need, and we'll craft the perfect bamboo product for you.</p>
+                </div>
+                <div class="customization-wrapper fade-in">
+                    
+                    <!-- Input Form -->
+                    <div class="form-container glass-card">
+                        <form id="customForm" novalidate>
+                            <div class="form-group row">
+                                <div class="col">
+                                    <label for="name">Full Name *</label>
+                                    <input type="text" id="name" placeholder="John Doe" required>
+                                    <span class="error-msg" id="nameError">Please enter your name.</span>
+                                </div>
+                                <div class="col">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" placeholder="john@example.com" required>
+                                    <span class="error-msg" id="emailError">Please enter a valid email.</span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="productType">Preferred Product Type *</label>
+                                <select id="productType" required>
+                                    <option value="" disabled selected>Select an option</option>
+                                    <option value="Furniture">Furniture</option>
+                                    <option value="Daily Use Item">Daily Use Item</option>
+                                    <option value="Home Decor">Home Decor</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <span class="error-msg" id="typeError">Please select a product type.</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Design Preference</label>
+                                <div class="radio-group">
+                                    <label class="radio-btn"><input type="radio" name="design" value="Modern" checked> <span>Modern</span></label>
+                                    <label class="radio-btn"><input type="radio" name="design" value="Traditional"> <span>Traditional</span></label>
+                                    <label class="radio-btn"><input type="radio" name="design" value="Minimalist"> <span>Minimalist</span></label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group budget-group">
+                                <div class="budget-header">
+                                    <label for="budget">Budget Range</label>
+                                    <span class="budget-value">$<span id="budgetDisplay">100</span></span>
+                                </div>
+                                <input type="range" id="budget" min="10" max="1000" step="10" value="100">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="purpose">Purpose of Product *</label>
+                                <input type="text" id="purpose" placeholder="E.g., For my new home office" required>
+                                <span class="error-msg" id="purposeError">Please state the purpose.</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="notes">Additional Notes</label>
+                                <textarea id="notes" rows="3" placeholder="Any specific requirements..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn-submit" id="submitBtn">Generate Blueprint</button>
+                        </form>
+                    </div>
+
+                    <!-- Live Preview / Submitted Data -->
+                    <div class="preview-container glass-card">
+                        <h3>Your Blueprint</h3>
+                        <div class="blueprint-card" id="blueprintCard">
+                            <div class="blueprint-placeholder" id="blueprintPlaceholder">
+                                <div class="placeholder-icon">🍃</div>
+                                <p>Fill out the form and submit to generate your custom bamboo blueprint.</p>
+                            </div>
+                            <div class="blueprint-content hidden" id="blueprintContent">
+                                <h4>Order Summary</h4>
+                                <ul class="blueprint-list">
+                                    <li><span class="label">Name:</span> <span class="value" id="prevName">-</span></li>
+                                    <li><span class="label">Email:</span> <span class="value" id="prevEmail">-</span></li>
+                                    <li><span class="label">Type:</span> <span class="value" id="prevType">-</span></li>
+                                    <li><span class="label">Style:</span> <span class="value" id="prevDesign">-</span></li>
+                                    <li><span class="label">Budget:</span> <span class="value">$<span id="prevBudget">-</span></span></li>
+                                    <li><span class="label">Purpose:</span> <span class="value" id="prevPurpose">-</span></li>
+                                </ul>
+                                <div class="notes-preview">
+                                    <span class="label">Notes:</span>
+                                    <p class="value" id="prevNotes">-</p>
+                                </div>
+                                
+                                <div class="blueprint-actions">
+                                    <button class="btn-download" id="downloadBtn">Confirm & Send File</button>
+                                    <button class="btn-clear" id="clearBtn">Clear Data</button>
+                                </div>
+                                <div id="successMsg" class="success-msg hidden">✓ Data Sent & Saved Successfully!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h2 class="logo-footer">Conscious<span>Bamboo</span></h2>
+                <p>Nurturing the planet, <br>one product at a time.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#customize">Customize</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Connect With Us</h3>
+                <p>Email: hello@consciousbamboo.com</p>
+                <div class="socials">
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="Twitter">TW</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Conscious Bamboo. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
