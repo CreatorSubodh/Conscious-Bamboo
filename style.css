@@ -244,7 +244,7 @@ header.scrolled {
 .hero {
     height: 100vh;
     min-height: 600px;
-    background: linear-gradient(rgba(43, 48, 44, 0.4), rgba(43, 48, 44, 0.6)), url('images/bamboo_hero.png') center/cover no-repeat;
+    background: linear-gradient(rgba(43, 48, 44, 0.4), rgba(43, 48, 44, 0.6)), url('bamboo_hero.png') center/cover no-repeat;
     display: flex;
     align-items: center;
     padding-top: 80px;
